@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS link  -->
+    <link rel="stylesheet" href="style.css" type />
+    <!-- Favicon (LOGO) -->
+    <link
+      rel="icon"
+      href="../MusicPlayer/Image/Favicon/music_logo_1.png"
+      type="image/png"
+    />
+    <!-- font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <nav>
+      <section class="nav-left">
+        <img src="../MusicPlayer/Image/Favicon/music_logo_1.png" alt="logo" />
+        <div id="navbar-title">
+          <span>Music</span>
+          <span>Player</span>
+        </div>
+        <a href="#">Favourites</a>
+      </section>
+      <section class="nav-right">
+        <div id="navbar-search-bar">
+          <span
+            ><i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search"
+          /></span>
+          <span><i class="fa-solid fa-microphone"></i> </span>
+        </div>
+        <div id="navbar-bell-icon">
+          <i class="fa-solid fa-bell"></i>
+        </div>
+        <div id="navbar-profile">
+          <img
+            src="../MusicPlayer/Image/navbar/navbar_profile.jpg"
+            alt="profile pic"
+          />
+        </div>
+      </section>
+    </nav>
+    <main class="main">
+      <section class="main-left">
+        <div class="slide-show">
+          <input type="radio" name="slider" id="item-1" checked />
+          <input type="radio" name="slider" id="item-2" />
+          <input type="radio" name="slider" id="item-3" />
+          <div class="cards">
+            <label class="card" for="item-1" id="song-1">
+              <img
+                src="https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80"
+                alt="song"
+              />
+            </label>
+            <label class="card" for="item-2" id="song-2">
+              <img
+                src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
+                alt="song"
+              />
+            </label>
+            <label class="card" for="item-3" id="song-3">
+              <img
+                src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+                alt="song"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="artist-section">
+          <div class="artist-title"><span>Popular Artists</span></div>
+          <div class="artist-containers">
+            <div class="artist-card" id="adele">
+              <div  class="artists"></div>
+              <span>Adele</span>
+            </div>
+            <div class="artist-card" id="doja">
+              <div  class="artists"></div>
+              <span>Doja Cat</span>
+            </div>
+            <div class="artist-card" id="drake">
+              <div  class="artists"></div>
+              <span>Drake</span>
+            </div>
+            <div class="artist-card" id="ed">
+              <div  class="artists"></div>
+              <span>Ed Sheeran</span>
+            </div>
+            <div class="artist-card" id="lil">
+              <div  class="artists"></div>
+              <span>Lil Nas</span>
+            </div>
+            <div class="artist-card" id="weeknd">
+              <div  class="artists"></div>
+              <span>The Weeknd</span>
+            </div>
+          </div>
+        </div>
+        <div class="radio-station-section">
+          <div class="radio-station-logo"></div>
+          <div class="radio-station-container">
+            <div class="radio-station-option" id="radio-option-title-1"><span >&nbsp; Romantic &nbsp;</span></div>
+            <div class="radio-station-option" id="radio-option-title-2"><span >&nbsp; Retro &nbsp;</span></div>
+            <div class="radio-station-option" id="radio-option-title-3"><span >&nbsp; Pop &nbsp;</span></div>
+            <div class="radio-station-option" id="radio-option-title-4"><span >&nbsp; Chill &nbsp;</span></div>
+            <div class="radio-station-option" id="radio-option-title-5"><span >&nbsp; Workout &nbsp;</span></div>
+          </div>
+        </div>
+        <div class="songs-section">
+          <div class="songs-section-title"><span>Chart Busters</span></div>
+          <div class="song-element-container">
+            <a href="../MusicPlayer/Single_playlist_screen/index.html">
+          <div class="song-element" id="song-element-1">
+            <div class="song-element-image"></div>
+            <div class="song-element-text">
+              <span class="song-element-title">Song 1</span>
+              <span class="song-element-singer">singer 1</span>
+            </div>
+          </div>
+          </a>
+          <a href="../MusicPlayer/Single_playlist_screen/index.html">
+          <div class="song-element" id="song-element-2">
+            <div class="song-element-image"></div>
+            <div class="song-element-text">
+              <span class="song-element-title">Song 2</span>
+              <span class="song-element-singer">singer 2</span>
+            </div>
+          </div>
+          </a>
+          <a href="../MusicPlayer/Single_playlist_screen/index.html">
+          <div class="song-element" id="song-element-3">
+            <div class="song-element-image"></div>
+            <div class="song-element-text">
+              <span class="song-element-title">Song 3</span>
+              <span class="song-element-singer">singer 3</span>
+            </div>
+          </div>
+          </a>
+          <a href="../MusicPlayer/Single_playlist_screen/index.html">
+          <div class="song-element" id="song-element-4">
+            <div class="song-element-image"></div>
+            <div class="song-element-text">
+              <span class="song-element-title">Song 4</span>
+              <span class="song-element-singer">singer 4</span>
+            </div>
+          </div>
+          </a>
+          <a href="../MusicPlayer/Single_playlist_screen/index.html">
+          <div class="song-element" id="song-element-5">
+            <div class="song-element-image"></div>
+            <div class="song-element-text">
+              <span class="song-element-title">Song 5</span>
+              <span class="song-element-singer">singer 5</span>
+            </div>
+          </div>
+          </a>
+          </div>
+        </div>
+        <div class="songs-section">
+          <div class="songs-section-title"><span>Amarican Hits</span></div>
+          <div class="song-element-container">
+            <a href="../MusicPlayer/Single_playlist_screen/index.html">
+          <div class="song-element" id="song-element-1-1">
+            <div class="song-element-image"></div>
+            <div class="song-element-text">
+              <span class="song-element-title">Song 1</span>
+              <span class="song-element-singer">singer 1</span>
+            </div>
+          </div>
+          </a>
+          <a href="../MusicPlayer/Single_playlist_screen/index.html">
+          <div class="song-element" id="song-element-2-2">
+            <div class="song-element-image"></div>
+            <div class="song-element-text">
+              <span class="song-element-title">Song 2</span>
+              <span class="song-element-singer">singer 2</span>
+            </div>
+          </div>
+          </a>
+          <a href="../MusicPlayer/Single_playlist_screen/index.html">
+          <div class="song-element" id="song-element-3-3">
+            <div class="song-element-image"></div>
+            <div class="song-element-text">
+              <span class="song-element-title">Song 3</span>
+              <span class="song-element-singer">singer 3</span>
+            </div>
+          </div>
+          </a>
+          <a href="../MusicPlayer/Single_playlist_screen/index.html">
+          <div class="song-element" id="song-element-4-4">
+            <div class="song-element-image"></div>
+            <div class="song-element-text">
+              <span class="song-element-title">Song 4</span>
+              <span class="song-element-singer">singer 4</span>
+            </div>
+          </div>
+          </a>
+          <a href="../MusicPlayer/Single_playlist_screen/index.html">
+          <div class="song-element" id="song-element-5-5">
+            <div class="song-element-image"></div>
+            <div class="song-element-text">
+              <span class="song-element-title">Song 5</span>
+              <span class="song-element-singer">singer 5</span>
+            </div>
+          </div>
+          </a>
+          </div>
+        </div>
+        <section class="blank-div"></section>
+      </section>
+      <section class="main-right">
+        <div class="queue-title"><span>My Playlist</span></div>
+        <div class="queue-container">
+          <ul class="main-queue-list">
+            <li>
+              <div class="main-queue-element">
+                <div class="main-queue-element-left">
+                  <span class="main-queue-element-order">01</span>
+                  <img
+                    src="../MusicPlayer/Image/music_img/music_1.jpg"
+                    alt="music image"
+                  />
+                  <span class="main-queue-element-label">
+                    <span class="song-name">Song name</span>
+                    <span class="singer-name">Singer</span>
+                  </span>
+                </div>
+                <div class="main-queue-element-right">
+                  <label class="like">
+                    <input type="checkbox" />
+                    <div class="hearth" />
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="main-queue-element">
+                <div class="main-queue-element-left">
+                  <span class="main-queue-element-order">02</span>
+                  <img
+                    src="../MusicPlayer/Image/music_img/music_2.jpg"
+                    alt="music image"
+                  />
+                  <span class="main-queue-element-label">
+                    <span class="song-name">Song name</span>
+                    <span class="singer-name">Singer</span>
+                  </span>
+                </div>
+                <div class="main-queue-element-right">
+                  <label class="like">
+                    <input type="checkbox" />
+                    <div class="hearth" />
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="main-queue-element">
+                <div class="main-queue-element-left">
+                  <span class="main-queue-element-order">03</span>
+                  <img
+                    src="../MusicPlayer/Image/music_img/music_3.jpg"
+                    alt="music image"
+                  />
+                  <span class="main-queue-element-label">
+                    <span class="song-name">Song name</span>
+                    <span class="singer-name">Singer</span>
+                  </span>
+                </div>
+                <div class="main-queue-element-right">
+                  <label class="like">
+                    <input type="checkbox" />
+                    <div class="hearth" />
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="main-queue-element">
+                <div class="main-queue-element-left">
+                  <span class="main-queue-element-order">04</span>
+                  <img
+                    src="../MusicPlayer/Image/music_img/music_4.jpg"
+                    alt="music image"
+                  />
+                  <span class="main-queue-element-label">
+                    <span class="song-name">Song name</span>
+                    <span class="singer-name">Singer</span>
+                  </span>
+                </div>
+                <div class="main-queue-element-right">
+                  <label class="like">
+                    <input type="checkbox" />
+                    <div class="hearth" />
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="main-queue-element">
+                <div class="main-queue-element-left">
+                  <span class="main-queue-element-order">05</span>
+                  <img
+                    src="../MusicPlayer/Image/music_img/music_5.jpg"
+                    alt="music image"
+                  />
+                  <span class="main-queue-element-label">
+                    <span class="song-name">Song name</span>
+                    <span class="singer-name">Singer</span>
+                  </span>
+                </div>
+                <div class="main-queue-element-right">
+                  <label class="like">
+                    <input type="checkbox" />
+                    <div class="hearth" />
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="main-queue-element">
+                <div class="main-queue-element-left">
+                  <span class="main-queue-element-order">06</span>
+                  <img
+                    src="../MusicPlayer/Image/music_img/music_6.jpg"
+                    alt="music image"
+                  />
+                  <span class="main-queue-element-label">
+                    <span class="song-name">Song name</span>
+                    <span class="singer-name">Singer</span>
+                  </span>
+                </div>
+                <div class="main-queue-element-right">
+                  <label class="like">
+                    <input type="checkbox" />
+                    <div class="hearth" />
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="main-queue-element">
+                <div class="main-queue-element-left">
+                  <span class="main-queue-element-order">07</span>
+                  <img
+                    src="../MusicPlayer/Image/music_img/music_7.jpg"
+                    alt="music image"
+                  />
+                  <span class="main-queue-element-label">
+                    <span class="song-name">Song name</span>
+                    <span class="singer-name">Singer</span>
+                  </span>
+                </div>
+                <div class="main-queue-element-right">
+                  <label class="like">
+                    <input type="checkbox" />
+                    <div class="hearth" />
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="main-queue-element">
+                <div class="main-queue-element-left">
+                  <span class="main-queue-element-order">08</span>
+                  <img
+                    src="../MusicPlayer/Image/music_img/music_8.jpg"
+                    alt="music image"
+                  />
+                  <span class="main-queue-element-label">
+                    <span class="song-name">Song name</span>
+                    <span class="singer-name">Singer</span>
+                  </span>
+                </div>
+                <div class="main-queue-element-right">
+                  <label class="like">
+                    <input type="checkbox" />
+                    <div class="hearth" />
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="main-queue-element">
+                <div class="main-queue-element-left">
+                  <span class="main-queue-element-order">09</span>
+                  <img
+                    src="../MusicPlayer/Image/music_img/music_9.jpg"
+                    alt="music image"
+                  />
+                  <span class="main-queue-element-label">
+                    <span class="song-name">Song name</span>
+                    <span class="singer-name">Singer</span>
+                  </span>
+                </div>
+                <div class="main-queue-element-right">
+                  <label class="like">
+                    <input type="checkbox" />
+                    <div class="hearth" />
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="main-queue-element">
+                <div class="main-queue-element-left">
+                  <span class="main-queue-element-order">01</span>
+                  <img
+                    src="../MusicPlayer/Image/music_img/music_1.jpg"
+                    alt="music image"
+                  />
+                  <span class="main-queue-element-label">
+                    <span class="song-name">Song name</span>
+                    <span class="singer-name">Singer</span>
+                  </span>
+                </div>
+                <div class="main-queue-element-right">
+                  <label class="like">
+                    <input type="checkbox" />
+                    <div class="hearth" />
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="main-queue-element">
+                <div class="main-queue-element-left">
+                  <span class="main-queue-element-order">02</span>
+                  <img
+                    src="../MusicPlayer/Image/music_img/music_2.jpg"
+                    alt="music image"
+                  />
+                  <span class="main-queue-element-label">
+                    <span class="song-name">Song name</span>
+                    <span class="singer-name">Singer</span>
+                  </span>
+                </div>
+                <div class="main-queue-element-right">
+                  <label class="like">
+                    <input type="checkbox" />
+                    <div class="hearth" />
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="main-queue-element">
+                <div class="main-queue-element-left">
+                  <span class="main-queue-element-order">03</span>
+                  <img
+                    src="../MusicPlayer/Image/music_img/music_3.jpg"
+                    alt="music image"
+                  />
+                  <span class="main-queue-element-label">
+                    <span class="song-name">Song name</span>
+                    <span class="singer-name">Singer</span>
+                  </span>
+                </div>
+                <div class="main-queue-element-right">
+                  <label class="like">
+                    <input type="checkbox" />
+                    <div class="hearth" />
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="main-queue-element">
+                <div class="main-queue-element-left">
+                  <span class="main-queue-element-order">04</span>
+                  <img
+                    src="../MusicPlayer/Image/music_img/music_4.jpg"
+                    alt="music image"
+                  />
+                  <span class="main-queue-element-label">
+                    <span class="song-name">Song name</span>
+                    <span class="singer-name">Singer</span>
+                  </span>
+                </div>
+                <div class="main-queue-element-right">
+                  <label class="like">
+                    <input type="checkbox" />
+                    <div class="hearth" />
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="main-queue-element">
+                <div class="main-queue-element-left">
+                  <span class="main-queue-element-order">05</span>
+                  <img
+                    src="../MusicPlayer/Image/music_img/music_5.jpg"
+                    alt="music image"
+                  />
+                  <span class="main-queue-element-label">
+                    <span class="song-name">Song name</span>
+                    <span class="singer-name">Singer</span>
+                  </span>
+                </div>
+                <div class="main-queue-element-right">
+                  <label class="like">
+                    <input type="checkbox" />
+                    <div class="hearth" />
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="main-queue-element">
+                <div class="main-queue-element-left">
+                  <span class="main-queue-element-order">06</span>
+                  <img
+                    src="../MusicPlayer/Image/music_img/music_6.jpg"
+                    alt="music image"
+                  />
+                  <span class="main-queue-element-label">
+                    <span class="song-name">Song name</span>
+                    <span class="singer-name">Singer</span>
+                  </span>
+                </div>
+                <div class="main-queue-element-right">
+                  <label class="like">
+                    <input type="checkbox" />
+                    <div class="hearth" />
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="main-queue-element">
+                <div class="main-queue-element-left">
+                  <span class="main-queue-element-order">07</span>
+                  <img
+                    src="../MusicPlayer/Image/music_img/music_7.jpg"
+                    alt="music image"
+                  />
+                  <span class="main-queue-element-label">
+                    <span class="song-name">Song name</span>
+                    <span class="singer-name">Singer</span>
+                  </span>
+                </div>
+                <div class="main-queue-element-right">
+                  <label class="like">
+                    <input type="checkbox" />
+                    <div class="hearth" />
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="main-queue-element">
+                <div class="main-queue-element-left">
+                  <span class="main-queue-element-order">08</span>
+                  <img
+                    src="../MusicPlayer/Image/music_img/music_8.jpg"
+                    alt="music image"
+                  />
+                  <span class="main-queue-element-label">
+                    <span class="song-name">Song name</span>
+                    <span class="singer-name">Singer</span>
+                  </span>
+                </div>
+                <div class="main-queue-element-right">
+                  <label class="like">
+                    <input type="checkbox" />
+                    <div class="hearth" />
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="main-queue-element">
+                <div class="main-queue-element-left">
+                  <span class="main-queue-element-order">09</span>
+                  <img
+                    src="../MusicPlayer/Image/music_img/music_9.jpg"
+                    alt="music image"
+                  />
+                  <span class="main-queue-element-label">
+                    <span class="song-name">Song name</span>
+                    <span class="singer-name">Singer</span>
+                  </span>
+                </div>
+                <div class="main-queue-element-right">
+                  <label class="like">
+                    <input type="checkbox" />
+                    <div class="hearth" />
+                  </label>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      
+    </main>
+    
+    <player>
+      <section class="player-left"></section>
+      <section class="player-center">
+        <i class="fa-solid fa-shuffle player-buttons"></i>
+        <i class="fa-solid fa-backward-step player-buttons" id="backward"></i>
+        <i class="fa-solid fa-circle-play" id="play"
+          ><a href="https://open.spotify.com/"></a
+        ></i>
+        <!-- <i class="fa-solid fa-circle-pause"></i> -->
+        <i class="fa-solid fa-backward-step player-buttons" id="forward"></i>
+        <i class="fa-solid fa-repeat player-buttons"></i>
+      </section>
+      <section class="player-right"></section>
+    </player>
+    
+ <audio autoplay="true">
+  <source src="../MusicPlayer/Songs/sample_audio.mp3" >
+</audio>
+  </body>
+</html>
